@@ -1,0 +1,65 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley
+  border: none
+  margin-bottom: 0
+  margin-top: 0
+  padding: 0
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object
+  max-width: 100%
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link
+  display: inline-block
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px)
+  .container
+    max-width: 95%
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .sf-menu
+    display: none !important
+@media only screen and (max-width: 768px)
+  /**/
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  /**/
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 380px)
+  /*== ==*/
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /*== ==*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /*== ==*/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /*== ==*/
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /*== ==*/
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /*== ==*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /*===*/
+
+/**
+ * ## Captions
+ */
+@import "captions"
+
+/**
+ * ## Galleries
+ */
+@import "galleries"
