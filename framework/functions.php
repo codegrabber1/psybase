@@ -9,6 +9,13 @@ if ( ! function_exists( 'psybase_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function psybase_setup() {
+	    /**
+	     * Load up our required theme files and widgets.
+	     *
+	     */
+	    require( get_template_directory() . "/framework/options/widget_options.php" );
+	    require( get_template_directory() . "/framework/options/option_functions.php" );
+
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
