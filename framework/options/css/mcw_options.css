@@ -1,0 +1,76 @@
+@import url("color-picker.css");
+#mcw_admin{
+    width: 99%;
+    margin-top: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #5A5F64;
+    font-size: 12px;
+    overflow:hidden;
+    background-color: #ffffff;
+}
+#mcw_admin a{
+    outline: 0;
+}
+#mcw_admin .header{
+    width: 100%;
+    overflow: hidden;
+}
+#mcw_admin .header h2 {
+    background: url("images/mini_logo.jpg") no-repeat;
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 66px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    line-height: 1.8;
+}
+#mcw_admin .main{
+    overflow:hidden;
+    height:90px;
+}
+#mcw_admin .header .main .left{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+#mcw_admin .theme_info{
+    float: right;
+    margin-right: 15px;
+    text-align:right;
+}
+
+#mcw_admin .theme_info h3{
+    text-align: right;
+    margin-top: 10px;
+    color: #f6f8f9;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+#mcw_admin .theme_info ul{
+    overflow:auto;
+    margin-top: 10px;
+    float:right;
+}
+
+#mcw_admin .theme_info ul li {
+    padding-left: 20px;
+    display: inline;
+    margin-left: 10px;
+}
+
+#mcw_admin .theme_info ul li.support i{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+
+#mcw_admin .theme_info ul li  a{
+    text-decoration:none;
+    color:white;
+}

@@ -21,6 +21,7 @@ add_action( 'admin_init', 'mcw_register_admin_scripts' );
 
 function mcw_register_admin_scripts(){
 
+	wp_enqueue_style( 'mcw_theme_options_css', get_template_directory_uri() . '/framework/options/css/mcw_options.css' );
 	wp_enqueue_style('thickbox');
 	wp_enqueue_script( 'jquery-ui-core' );
 	wp_enqueue_script('mcw_select_js', get_template_directory_uri() . '/framework/options/js/jquery.customSelect.min.js', array( 'jquery' ));
@@ -71,11 +72,19 @@ function mcw_theme_options_scripts(){
 function mcw_theme_options_page() {
 ?>
 	<div id="mcw_admin">
+		<header class="header">
+			<div class="main">
+				<div class="left">
+					<h2><?php echo _e('Theme settings', 'makecodework'); ?></h2>
+				</div>
+				<div class="theme_info">Theme_info</div>
+			</div>
+		</header> <!-- /header -->
 		<div class="options-wrap">
 			<div class="tabs">
 				<ul>
 					<li class="general first"><a href="#general"><i class="icon-cogs"></i><?php echo _e('General', 'codegrabber'); ?></a></li>
-					<li class="posts"><a href="#posts"><i class="icon-cogs"></i><?php echo _e('Posts', 'codegrabber'); ?></a></li>
+					<li class="posts"><a href="#posts"><i class="icon-cogs"></i><?php echo _e('Blog', 'codegrabber'); ?></a></li>
 					<li class="booking"><a href="#booking"><i class="icon-cogs"></i><?php echo _e('Booking', 'codegrabber'); ?></a></li>
 					<li class="contact"><a href="#contact"><i class="icon-cogs"></i><?php echo _e('Contact', 'codegrabber'); ?></a></li>
 					<li class="reset"><a href="#reset"><i class="icon-refresh"></i><?php echo _e( 'Reset', 'codegrabber' );?></a></li>
