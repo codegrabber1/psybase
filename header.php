@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site clearfix">
     <header id="masthead" class="site-header">
         <nav class="clearfix">
             <div class="container">
@@ -67,4 +67,4 @@
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
-    <div id="content" class="site-content">
+    <div id="content" class="site-content clearfix">

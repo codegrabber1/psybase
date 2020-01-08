@@ -8,8 +8,8 @@
  */
 
 ?>
-    <article class="ui one cards" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="blue card">
+    <article class="" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class="blue ">
         <header class="entry-header">
 
 			<?php

@@ -11,7 +11,7 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <main id="main" class="site-main!!!">
         <section class="main-slider">
             <div class="big-tabs">
                 <div class="ui attached tab active" data-tab="first">

@@ -17,12 +17,12 @@ $options = get_option('mcw_options');
  * Set the animations.
  * ==================
 */
-function codegrabber_animate_css() {
+function makecodework_animate_css() {
 	$options = get_option('mcw_options');
 	$show_animation = $options['mcw_enable_animation'];
 
 	if( !empty($show_animation) ){
-		wp_enqueue_style( 'makecodework-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
+		wp_enqueue_style( 'psybase-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
 		wp_enqueue_script( 'makecodework-wowjs', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array( 'jquery' ), '20151215', true );
 	}
 }

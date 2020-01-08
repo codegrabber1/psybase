@@ -122,11 +122,11 @@ add_action( 'widgets_init', 'psybase_widgets_init' );
 function psybase_scripts() {
 	wp_enqueue_style( 'psybase-bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css' );
 
-	wp_enqueue_style( 'codegrabber-superfishcss', 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' );
+	wp_enqueue_style( 'psybase-superfishcss', 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css' );
 
-	wp_enqueue_style( 'codegrabber-superfishcss', 'https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css' );
+	wp_enqueue_style( 'psybase-superfishcss', 'https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.min.css' );
 
-	wp_enqueue_style( 'codegrabber-mmenucss', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css' );
+	wp_enqueue_style( 'psybase-mmenucss', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.3/jquery.mmenu.all.css' );
 
 	wp_enqueue_style( 'psybase-owlcss', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css' );
 
@@ -134,7 +134,7 @@ function psybase_scripts() {
 
 	wp_enqueue_style( 'psybase-fontawesomecss', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 
-	wp_enqueue_style( 'psybase-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'psybase-jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '20151215', true );
 
@@ -205,7 +205,7 @@ if( !function_exists( 'psybase_comment' ) ) :
 		switch( $comment->comment_type ) :
 			case '' :
 				if( $comment->user_id == $post->post_author ){
-					$author_text = '<div class="comment_author">WestSportCenter</div>';
+					$author_text = '<div class="comment_author">Psybasy</div>';
 				} else {
 					$author_text = '';
 				}
