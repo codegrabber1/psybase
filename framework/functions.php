@@ -163,7 +163,7 @@ add_action( 'wp_enqueue_scripts', 'psybase_scripts' );
  * @return Prints the HTML for the pagination if a template is $paged
  */
 if ( ! function_exists( 'wt_pagination' ) ) :
-	function wt_pagination() {
+	function mcw_pagination() {
 		global $wp_query;
 
 		$big = 999999999; // This needs to be an unlikely integer

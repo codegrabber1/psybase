@@ -33,21 +33,26 @@ get_header();
 		$wp_query = new WP_Query( $args );
 
 		if ( $wp_query -> have_posts() ) : ?>
-
-			<?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>
-                <div class="col-3 postlist clearfix">
+        <?php
+//			$last_post = $wp_query->post_count -1;
+			while ( $wp_query -> have_posts() ) : $wp_query -> the_post();
+			    if( $wp_query->current_post <= 1  ):
+			?>
+                <div class="col-6 postlist clearfix">
 					<?php get_template_part( 'template-parts/content', 'excerpt' ); ?>
                 </div>
-			<?php endwhile; ?>
+             <?php else: ?>
+                <div class="col-3 postlist clearfix">
+                    <?php get_template_part( 'template-parts/content', 'excerpt' ); ?>
+                </div>
+			<?php endif; endwhile; ?>
 
 		<?php endif;
 		?>
-        <!-- /content -->
-        <!--                <div class="col-4">-->
-        <!--					--><?php //get_sidebar(); ?>
-        <!--                </div>-->
+
 
     </div>
+	<?php mcw_pagination(); ?>
 </div>
 
 <?php get_footer(); ?>

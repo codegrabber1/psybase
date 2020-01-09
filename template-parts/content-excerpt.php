@@ -23,7 +23,6 @@ get_header();
 			<span class="author">
 				<?php _e( 'Created', 'psybase' );?>
 				<?php psybase_posted_by();  ?>
-
 			</span>
 			<span class="sep"> - </span>
 			<span class="date">
